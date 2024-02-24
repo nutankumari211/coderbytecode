@@ -3,7 +3,8 @@
 1 - Have the function MatchingCharacters(str) take the str parameter being passed and determine the largest number of unique characters that exists between a pair of matching letters anywhere in the string. For example: if str is "ahyjakh" then there are only two pairs of matching letters, the two a's and the two h's. Between the pair of a's there are 3 unique characters: h, y, and j. Between the h's there are 4 unique characters: y, j, a, and k. So for this example your program should return 4. 
 Another example: if str is "ghececgkaem" then your program should return 5 because the most unique characters exists within the farthest pair of e characters. The input string may not contain any character pairs, and in that case your program should just return 0. The input will only consist of lowercase alphabetic characters. */
 
-ans - function MatchingCharacters(str) {
+ans ->
+function MatchingCharacters(str) {
     var maxUnique = 0;
 
     for (var i = 0; i < str.length; i++) {
@@ -16,10 +17,8 @@ ans - function MatchingCharacters(str) {
             }
         }
     }
-
-    console.log(maxUnique);
+console.log(maxUnique);
 }
-
 function countUniqueChars(substring) {
     var charSet = {};
     for (var i = 0; i < substring.length; i++) {
@@ -39,7 +38,8 @@ MatchingCharacters('ghececgkaem'); // Output: 5
 We provided some simple JavaScript template code. Your goal is to modify the application so that you can properly toggle the button to switch between an ON state and an OFF state. When the button is on and it is clicked, it turns off and the text within it changes from ON to OFF and vice versa. Only replace the text within the DOM element, do not replace the entire DOM element. You are free to add classes and styles, but make sure you leave the element ID's as they are.
 
 
-ans - const rootApp = document.getElementById("root");
+ans ->
+const rootApp = document.getElementById("root");
 rootApp.innerHTML = '<button id="toggleButton">ON</button>';
 
 // Add event listener to the button
@@ -78,7 +78,8 @@ Input: ["1011", "0010"]
 Output: 2
 
 
-ans - function BitmapHoles(strArr) {
+ans ->
+function BitmapHoles(strArr) {
     const matrix = strArr.map(row => row.split(''));
 
     function dfs(row, col) {
@@ -161,7 +162,8 @@ Example Output
 2
 
 
-ans - <?php
+ans ->
+<?php
 $ch = curl_init('https://coderbyte.com/api/challenges/json/age-counting');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HEADER, 0);
